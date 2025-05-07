@@ -1,9 +1,10 @@
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const widgetRef = useRef<HTMLDivElement>(null);
 
   const toggleChat = () => {
     setIsOpen(!isOpen);
@@ -16,8 +17,22 @@ const WhatsAppWidget = () => {
     window.open(url, '_blank');
   };
 
+  // Handle outside clicks
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (widgetRef.current && !widgetRef.current.contains(event.target as Node) && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
+
   return (
-    <div className="wa__widget fixed bottom-[30px] right-[30px] z-50">
+    <div ref={widgetRef} className="wa__widget fixed bottom-[30px] right-[30px] z-50">
       {/* Chat popup */}
       {isOpen && (
         <div className="wa__popup bg-white rounded-lg shadow-xl w-[300px] mb-4 animate-fade-in overflow-hidden">

@@ -24,8 +24,9 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 bg-white shadow-md z-50">
       <div className="container-custom flex justify-between items-center py-4">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex flex-col">
           <span className="text-2xl font-playfair font-bold text-ekhie-navy">EKHIE</span>
+          <span className="text-xs font-medium text-ekhie-gray -mt-1">Business Solutions</span>
         </Link>
 
         {/* Desktop Navigation */}
