@@ -199,8 +199,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-2">Email</h3>
                       <p className="text-ekhie-gray">
-                        <a href="mailto:info@ekhie.org" className="hover:text-ekhie-navy transition-colors">
-                          info@ekhie.org
+                        <a href="mailto:lal@ekhie.org" className="hover:text-ekhie-navy transition-colors">
+                          lal@ekhie.org
                         </a>
                       </p>
                     </div>

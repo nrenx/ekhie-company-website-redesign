@@ -3,6 +3,7 @@ import HeroSection from '@/components/home/HeroSection';
 import ClientsSlider from '@/components/home/ClientsSlider';
 import ServicesOverview from '@/components/home/ServicesOverview';
 import CallToAction from '@/components/common/CallToAction';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -21,15 +22,18 @@ const Home = () => {
                 including comprehensive legal support, recruitment solutions, CSR event planning,
                 internship opportunities, and corporate gifting solutions.
               </p>
-              <p className="text-lg text-ekhie-gray">
+              <p className="text-lg mb-6 text-ekhie-gray">
                 Our mission is to deliver excellence in all our services while maintaining the highest
                 standards of professionalism, integrity, and client satisfaction.
               </p>
+              <div className="mt-6">
+                <Link to="/contact" className="btn-primary">Contact Us</Link>
+              </div>
             </div>
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
-                alt="EKHIE Business Solutions team" 
+                src="https://ekhie.org/wp-content/uploads/2024/04/cropped-IMG_5973-300x204.jpg" 
+                alt="EKHIE Business Solutions" 
                 className="w-full h-auto"
               />
             </div>

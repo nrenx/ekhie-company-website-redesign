@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WhatsAppWidget from "./components/common/WhatsAppWidget";
 import Home from "./pages/Home";
 import LegalServices from "./pages/LegalServices";
 import CSR from "./pages/CSR";
@@ -39,6 +40,7 @@ const App = () => (
             </Routes>
           </main>
           <Footer />
+          <WhatsAppWidget />
         </div>
       </BrowserRouter>
     </TooltipProvider>
