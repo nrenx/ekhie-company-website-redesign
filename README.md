@@ -62,12 +62,35 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### Deploy with Lovable
+
 Simply open [Lovable](https://lovable.dev/projects/37d080f6-e994-4fcb-abd2-73ff4ae8c06a) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+### Deploy with GitHub Pages
 
-Yes, you can!
+This project is configured to deploy to GitHub Pages. You can deploy it in two ways:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. **Automatic deployment with GitHub Actions**:
+   - Just push your changes to the `main` branch
+   - GitHub Actions will automatically build and deploy your site
+   - Your site will be available at `https://[your-username].github.io/ekhie-company-website-redesign/`
+
+2. **Manual deployment**:
+   - Run `npm run deploy` to build and deploy the site to GitHub Pages
+
+## Can I connect a custom domain to my project?
+
+### Custom domain with Lovable
+
+To connect a domain to your Lovable project, navigate to Project > Settings > Domains and click Connect Domain.
+
+### Custom domain with GitHub Pages
+
+To use a custom domain with GitHub Pages:
+
+1. Go to your repository settings on GitHub
+2. Navigate to the "Pages" section
+3. Under "Custom domain", enter your domain name
+4. Update the `public/CNAME` file in this repository with your domain name (uncomment and replace the example)
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
