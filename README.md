@@ -1,54 +1,49 @@
-# Welcome to your Lovable project
+# EKHIE Business Solutions Website
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/37d080f6-e994-4fcb-abd2-73ff4ae8c06a
+**Live Website**: [https://nrenx.github.io/ekhie-company-website-redesign/](https://nrenx.github.io/ekhie-company-website-redesign/)
 
-## How can I edit this code?
+**Repository**: [https://github.com/nrenx/ekhie-company-website-redesign](https://github.com/nrenx/ekhie-company-website-redesign)
 
-There are several ways of editing your application.
+EKHIE Business Solutions provides comprehensive legal services, recruitment solutions, CSR event planning, internships, and corporate gifting services.
 
-**Use Lovable**
+## Development Setup
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/37d080f6-e994-4fcb-abd2-73ff4ae8c06a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+To work on this project locally, you'll need Node.js and npm installed.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: Clone the repository
+git clone https://github.com/nrenx/ekhie-company-website-redesign.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd ekhie-company-website-redesign
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Editing the Code
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+**Local Development**
 
-**Use GitHub Codespaces**
+Use your preferred code editor to modify the files locally. After making changes, commit and push them to the repository.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**GitHub Web Interface**
+
+- Navigate to the file you want to edit in the GitHub repository
+- Click the pencil icon (Edit) at the top right of the file view
+- Make your changes and commit them directly from the browser
+
+**GitHub Codespaces**
+
+For quick edits without local setup:
+- Go to the repository on GitHub
+- Press the "." key to open the web-based editor
+- Or use Codespaces for a full development environment in the browser
 
 ## What technologies are used for this project?
 
@@ -60,37 +55,33 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Deployment
 
-### Deploy with Lovable
+This website is deployed using GitHub Pages. The deployment process is automated through GitHub Actions.
 
-Simply open [Lovable](https://lovable.dev/projects/37d080f6-e994-4fcb-abd2-73ff4ae8c06a) and click on Share -> Publish.
+### Automatic Deployment
 
-### Deploy with GitHub Pages
+When changes are pushed to the `main` branch, GitHub Actions automatically:
+1. Builds the project
+2. Deploys it to GitHub Pages
+3. Makes it available at [https://nrenx.github.io/ekhie-company-website-redesign/](https://nrenx.github.io/ekhie-company-website-redesign/)
 
-This project is configured to deploy to GitHub Pages. You can deploy it in two ways:
+### Manual Deployment
 
-1. **Automatic deployment with GitHub Actions**:
-   - Just push your changes to the `main` branch
-   - GitHub Actions will automatically build and deploy your site
-   - Your site will be available at `https://[your-username].github.io/ekhie-company-website-redesign/`
+You can also manually deploy the site:
 
-2. **Manual deployment**:
-   - Run `npm run deploy` to build and deploy the site to GitHub Pages
+```sh
+# Build and deploy to GitHub Pages
+npm run deploy
+```
 
-## Can I connect a custom domain to my project?
+## Custom Domain Setup
 
-### Custom domain with Lovable
+To use a custom domain with this website:
 
-To connect a domain to your Lovable project, navigate to Project > Settings > Domains and click Connect Domain.
-
-### Custom domain with GitHub Pages
-
-To use a custom domain with GitHub Pages:
-
-1. Go to your repository settings on GitHub
+1. Go to the repository settings on GitHub
 2. Navigate to the "Pages" section
 3. Under "Custom domain", enter your domain name
-4. Update the `public/CNAME` file in this repository with your domain name (uncomment and replace the example)
+4. Update the `public/CNAME` file in this repository with your domain name
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For more information, see [GitHub's documentation on custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
