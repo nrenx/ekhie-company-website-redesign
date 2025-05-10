@@ -1,67 +1,73 @@
 
 import CallToAction from '@/components/common/CallToAction';
+import { Check } from 'lucide-react';
+
+// Import images
+import corporateTshirts from '@/assets/images/souvenir/corporate-tshirts.jpg';
+import newYearGifts from '@/assets/images/souvenir/new-year-gifts.jpg';
+import womensDayGifts from '@/assets/images/souvenir/womens-day-gifts.jpg';
+import diwaliGifts from '@/assets/images/souvenir/diwali-gifts.jpg';
+import laptopBags from '@/assets/images/souvenir/laptop-bags.jpg';
+import certificateFrames from '@/assets/images/souvenir/certificate-frames.jpg';
+import corporateGiftBox from '@/assets/images/souvenir/corporate-gift-box.jpg';
 
 const products = [
   {
-    category: 'Corporate Apparel',
-    items: [
-      {
-        name: 'Customized T-shirts',
-        description: 'High-quality t-shirts with your company logo or custom design, perfect for corporate events, team building, or promotional giveaways.',
-        image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        name: 'Corporate Jackets & Hoodies',
-        description: 'Professionally designed jackets and hoodies with embroidered company logos, ideal for creating a unified team appearance or corporate gifts.',
-        image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
-      }
-    ]
+    name: 'Customised Corporate T-Shirts',
+    description: 'High-quality t-shirts with your company logo or custom design, perfect for corporate events, team building, or promotional giveaways.',
+    image: corporateTshirts
   },
   {
-    category: 'Business Accessories',
-    items: [
-      {
-        name: 'Laptop Bags & Backpacks',
-        description: 'Durable, stylish laptop bags and backpacks customized with your company branding, combining functionality with promotional value.',
-        image: 'https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        name: 'Premium Stationery Sets',
-        description: 'High-quality pens, notepads, and office supplies featuring your company logo, perfect for daily use and keeping your brand visible.',
-        image: 'https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
-      }
-    ]
+    name: 'New Year Corporate Gifts For Employees',
+    description: 'Specially designed gift sets to celebrate the new year, helping you show appreciation to your employees and start the year on a positive note.',
+    image: newYearGifts
   },
   {
-    category: 'Recognition & Awards',
-    items: [
-      {
-        name: 'Custom Mementos & Trophies',
-        description: 'Elegant, personalized mementos and trophies designed to recognize achievements, milestones, and contributions within your organization.',
-        image: 'https://images.unsplash.com/photo-1601591998098-33d2a551ad24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        name: 'Personalized Gift Sets',
-        description: 'Thoughtfully curated gift boxes containing premium items customized for special corporate occasions, client appreciation, or employee recognition.',
-        image: 'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
-      }
-    ]
+    name: 'Corporate Gifts For Women\'s Day',
+    description: 'Thoughtfully curated gifts designed specifically for Women\'s Day celebrations in the workplace, showing appreciation for female employees and partners.',
+    image: womensDayGifts
   },
   {
-    category: 'Seasonal & Festival Gifts',
-    items: [
-      {
-        name: 'Holiday Gift Collections',
-        description: 'Specially designed gift sets for various holidays and festivals, helping you maintain business relationships through thoughtful seasonal gestures.',
-        image: 'https://images.unsplash.com/photo-1481447553744-8c1965cf0481?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        name: 'Eco-Friendly Gift Options',
-        description: 'Sustainable, environmentally conscious corporate gifts that showcase your company\'s commitment to social responsibility.',
-        image: 'https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
-      }
-    ]
+    name: 'Corporate Diwali Gifts',
+    description: 'Festive gift collections for Diwali celebrations, helping you maintain business relationships through thoughtful seasonal gestures.',
+    image: diwaliGifts
+  },
+  {
+    name: 'Corporate Laptop Bags',
+    description: 'Durable, stylish laptop bags customized with your company branding, combining functionality with promotional value.',
+    image: laptopBags
+  },
+  {
+    name: 'Corporate Certificate Frames',
+    description: 'Elegant, personalized certificate frames designed to recognize achievements, milestones, and contributions within your organization.',
+    image: certificateFrames
   }
+];
+
+const whyChooseUs = [
+  {
+    title: 'Premium Quality Products',
+    description: 'Handpicked gifts that resonate with thoughtfulness and care.'
+  },
+  {
+    title: 'Customizable Solutions',
+    description: 'Tailored to suit your corporate identity and occasion.'
+  },
+  {
+    title: 'Reliable Delivery',
+    description: 'On-time and hassle-free gifting experiences across locations.'
+  },
+  {
+    title: 'Wide Range of Options',
+    description: 'From personalized gifts to elegant hampers, we cover it all.'
+  }
+];
+
+const ourServices = [
+  'Corporate gifting for clients, employees, and partners.',
+  'Festive and seasonal gifting.',
+  'Event-specific mementos and souvenirs.',
+  'Eco-friendly and sustainable gift options.'
 ];
 
 const Souvenir = () => {
@@ -69,10 +75,10 @@ const Souvenir = () => {
     <div className="min-h-screen">
       <section className="bg-ekhie-navy text-white pt-20 pb-16">
         <div className="container-custom">
-          <h1 className="heading-xl mb-6">Souvenir</h1>
+          <h1 className="heading-xl mb-6">EKHIE SOUVENIR</h1>
           <p className="text-xl max-w-3xl">
-            Corporate gifting solutions powered by Sona Screens Media Production Company, 
-            offering customized merchandise and eco-friendly gift options for all occasions.
+            A dedicated unit of EKHIE BUSINESS SOLUTIONS powered by SONA SCREENS MEDIA PRODUCTION COMPANY (Since 2005)
+            offering complete corporate gifting solutions.
           </p>
         </div>
       </section>
@@ -81,52 +87,88 @@ const Souvenir = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="heading-lg mb-6 text-ekhie-navy">Corporate Gifting Solutions</h2>
+              <h2 className="heading-lg mb-6 text-ekhie-navy">Corporate Gifting Services</h2>
               <p className="text-lg mb-6 text-ekhie-gray">
-                Our Souvenir service, powered by Sona Screens Media Production Company, provides 
-                premium corporate gifting solutions designed to strengthen business relationships, 
-                recognize achievements, and enhance your brand presence.
+                Welcome to EKHIE SOUVENIR, a dedicated unit of EKHIE BUSINESS SOLUTIONS
+                powered by SONA SCREENS MEDIA PRODUCTION COMPANY (Since 2005) offering complete
+                corporate gifting solutions that help you express gratitude, foster relationships,
+                and leave a lasting impression.
               </p>
               <p className="text-lg text-ekhie-gray">
-                From custom-branded merchandise to elegant gift boxes, we offer a wide range of options 
-                that combine quality, creativity, and personalization to meet your specific corporate 
+                From custom-branded merchandise to elegant gift boxes, we offer a wide range of options
+                that combine quality, creativity, and personalization to meet your specific corporate
                 gifting needs.
               </p>
             </div>
             <div className="rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1607344645866-009c320c5ab8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
-                alt="Corporate gift box" 
+              <img
+                src={corporateGiftBox}
+                alt="Corporate gift box"
                 className="w-full h-auto"
               />
             </div>
           </div>
 
-          <h2 className="heading-lg text-center mb-16 text-ekhie-navy">Our Product Categories</h2>
-          
-          {products.map((category, index) => (
-            <div key={index} className="mb-16 last:mb-0">
-              <h3 className="text-2xl font-semibold mb-8 pb-2 border-b-2 border-ekhie-teal inline-block text-ekhie-navy">
-                {category.category}
-              </h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {category.items.map((item, i) => (
-                  <div key={i} className="service-card h-full">
-                    <div className="mb-6 rounded-md overflow-hidden">
-                      <img 
-                        src={item.image}
-                        alt={item.name}
-                        className="w-full h-60 object-cover"
-                      />
+          {/* Why Choose EKHIE Souvenir Section */}
+          <div className="mb-16">
+            <h2 className="heading-lg text-center mb-10 text-ekhie-navy">Why Choose EKHIE Souvenir?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {whyChooseUs.map((item, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-ekhie-teal/10 p-2 rounded-full mr-3">
+                      <Check className="h-5 w-5 text-ekhie-teal" />
                     </div>
-                    <h4 className="text-xl font-semibold mb-4 text-ekhie-navy">{item.name}</h4>
-                    <p className="text-ekhie-gray">{item.description}</p>
+                    <h3 className="text-lg font-semibold text-ekhie-navy">{item.title}</h3>
                   </div>
-                ))}
-              </div>
+                  <p className="text-ekhie-gray">{item.description}</p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Our Services Section */}
+          <div className="mb-16 bg-gray-50 p-8 rounded-lg">
+            <h2 className="heading-lg mb-6 text-ekhie-navy">Our Services Include:</h2>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {ourServices.map((service, index) => (
+                <li key={index} className="flex items-start">
+                  <div className="bg-ekhie-teal/10 p-1 rounded-full mr-3 mt-1">
+                    <Check className="h-4 w-4 text-ekhie-teal" />
+                  </div>
+                  <span className="text-lg text-ekhie-gray">{service}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* How We Add Value Section */}
+          <div className="mb-16 p-8 border-l-4 border-ekhie-teal bg-ekhie-teal/5 rounded-r-lg">
+            <h2 className="heading-lg mb-4 text-ekhie-navy">How We Add Value:</h2>
+            <p className="text-lg text-ekhie-gray">
+              At EKHIE Souvenir, we don't just offer gifts; we curate moments of joy and connection.
+              With attention to detail, innovative designs, and unmatched service, we ensure your
+              gestures of gratitude stand out.
+            </p>
+          </div>
+
+          <h2 className="heading-lg text-center mb-16 text-ekhie-navy">Corporate Gifting Solutions For Every Occasion</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {products.map((product, index) => (
+              <div key={index} className="service-card h-full">
+                <div className="mb-6 rounded-md overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-60 object-cover"
+                  />
+                </div>
+                <h4 className="text-xl font-semibold mb-4 text-ekhie-navy">{product.name}</h4>
+                <p className="text-ekhie-gray">{product.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -142,7 +184,7 @@ const Souvenir = () => {
                   Every product can be tailored to reflect your brand identity and specific requirements.
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-4xl mb-4">✨</div>
                 <h3 className="text-xl font-semibold mb-3 text-ekhie-navy">Quality</h3>
@@ -150,7 +192,7 @@ const Souvenir = () => {
                   We source only premium materials and work with reliable production partners.
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-4xl mb-4">🌱</div>
                 <h3 className="text-xl font-semibold mb-3 text-ekhie-navy">Sustainability</h3>
